@@ -38,9 +38,9 @@ file under 70 lines.
 - **Hybrid verification.** Run unit/schema/hook/MCP tests locally or in Docker;
   qualify packaging with `agy plugin validate` and local `agy plugin install`.
 - **Branches & commits.** Develop on `feature/<topic>`, merge into `dev` (then
-  delete the merged local branch with `git branch -d`), and PR `dev` into
-  `main`. Commit verified batches (main agent / coordinator only; subagents do
-  not commit). Do not push or rewrite history unless asked.
+  delete the merged branch with `git branch -d`), and stop at `dev`; only PR
+  `dev` into `main` when asked to release. Commit verified batches (main agent /
+  coordinator only; subagents never commit). Never push/rewrite unless asked.
 - **Ask first.** Stop and ask before changing IDE, user, account, or billing
   settings; modifying `~/.gemini/config/plugins/` outside approved local tests;
   accessing signed-in accounts; publishing to Marketplace; or destructive actions.
