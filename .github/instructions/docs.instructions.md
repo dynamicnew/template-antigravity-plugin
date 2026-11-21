@@ -1,0 +1,18 @@
+---
+applyTo: "docs/**,README.md,.antigravity-plugin/README.md"
+description: Rules for editing project documentation, plugin specs, and pre-install plugin README.md.
+---
+
+- Keep `docs/ai/handoff.md` under about 20 KB; move dated sections unchanged to
+  `docs/ai/handoff-history/`, repairing relative links without rewriting the
+  historical narrative.
+- Keep `docs/plugin/spec.md` synchronized with `plugin.json` (or
+  `.antigravity-plugin/plugin.json`), bundled components, auth/storage choices,
+  and Marketplace copy.
+- Keep internal contributor notes, handoff status, and open design questions in
+  `docs/ai/` — never leak them into user-facing pre-install `README.md`,
+  `plugin.json` descriptions, or `suggestedPrompts`.
+- Link to files, not line numbers. Name the symbol or heading instead.
+- When a document changes, check the links and anchors that point to it.
+- Separate verified facts from plans and unknowns, and label historical results
+  so they cannot be mistaken for fresh validation.
